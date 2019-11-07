@@ -3,25 +3,48 @@
   flex: 1;
 }
 
+.nav-upper-links {
+  min-height:24px;
+  max-height:24px;
+  align-content: flex-end;
+}
+
+.nav-upper-links a {
+  color: white;
+  font-size: 12px;
+  padding-right: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a {
+  color: white;
+  padding-right: 1em;
+}
+
+.nav-links a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
 mat-sidenav {
   width: 320px;
 }
 
-.avatar {
-  overflow: hidden;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin: 12px;
+mat-panel-expansion {
+  width: auto;
 }
 
 ::ng-deep .mat-list-item-content {
   height: auto !important;
 }
 
-.content {
-  padding: 12px;
-}
 
 mat-grid-tile {
   background: lightblue;
