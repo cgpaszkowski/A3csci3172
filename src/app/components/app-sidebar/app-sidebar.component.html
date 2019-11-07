@@ -1,0 +1,56 @@
+<mat-accordion>
+  <mat-expansion-panel>
+
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+  
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      
+      <mat-panel-title>
+        Filter 1 
+      </mat-panel-title>
+    
+    </mat-expansion-panel-header>
+    
+    <p>Option 1</p>
+    <p>Option 2</p>
+    <p>Option 3</p>
+    <p>Option 4</p>
+  
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      
+      <mat-panel-title>
+        Filter 1 
+      </mat-panel-title>
+    
+    </mat-expansion-panel-header>
+    
+    <p>Option 1</p>
+    <p>Option 2</p>
+    <p>Option 3</p>
+    <p>Option 4</p>
+  
+  </mat-expansion-panel>
+</mat-accordion>

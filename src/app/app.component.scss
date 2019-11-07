@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+mat-sidenav {
+  width: 320px;
+}
+
+.avatar {
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+::ng-deep .mat-list-item-content {
+  height: auto !important;
+}
+
+.content {
+  padding: 12px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
