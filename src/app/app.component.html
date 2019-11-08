@@ -1,81 +1,102 @@
-<div fxLayout="column" fxFlex>
+<div class="page-column" fxLayout="column" fxFlex>
   
-  <mat-toolbar color="primary">
-    
-    <mat-toolbar-row class="nav-upper-links">
-      <a href="#">Order Status</a>
-      <a href="#">Blog</a>
-      <a href="#">CShop for Business</a>
-      <a href="#">Francais</a>
-    </mat-toolbar-row>
-    
-    <mat-toolbar-row>
-      <span>Welcome to CShop!</span>
-    </mat-toolbar-row>
-    
-    <mat-toolbar-row class="nav-links">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-    </mat-toolbar-row>
-  </mat-toolbar>
+  <!--Header-->
+  <div class="header-row" fxLayout="row">
+    <mat-toolbar color="primary">
+      <div class="main-cont">
+        <!-- Main Nav Links (Top Right) -->
+        <mat-toolbar-row class="nav-upper-links">
+          <span class="test"></span>
+          <a href="#">Order Status</a>
+          <a href="#">Blog</a>
+          <a href="#">CShop for Business</a>
+          <a href="#">Francais</a>
+        </mat-toolbar-row>
+        
+        <!-- Main Nav Logo/Welcome -->
+        <mat-toolbar-row>
+          <span>Welcome to CShop!</span>
+        </mat-toolbar-row>
+        
+        <!-- Main Nav Links -->
+        <mat-toolbar-row class="nav-links">
+          <a href="#">Shop</a>
+          <a href="#">Brands</a>
+          <a href="#">Deals</a>
+          <a href="#">Services</a>
+        </mat-toolbar-row>
+      </div> 
+    </mat-toolbar>
+  </div>
 
-  <mat-sidenav-container fxFlex>
-
-    <mat-sidenav mode="side" opened>
+  <!--Body-->
+  <div class="body-row  main-cont" fxLayout="row">
+    
+    <!--Sidebar-->
+    <div class="sidebar-column" fxLayout="column" fxFlex="0 0 250px" style="background-color: lightgreen">
+      <!--
+      <mat-sidenav mode="side" opened fxLayout="column">
         <mat-nav-list>
           <mat-list-item>
             <app-sidebar></app-sidebar>
           </mat-list-item>
         </mat-nav-list> 
-    </mat-sidenav>
+      </mat-sidenav>
+      -->
+    </div>
     
-    <mat-grid-list cols = "4" rowHeight = "300px">
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 1
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 2
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 3
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 4
-      </mat-grid-tile>
+    <!--Content-->  
+    <div class="product-column" fxLayout="column" fxFlex="auto">
+      <mat-grid-list cols = "4" rowHeight = "300px">
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 1
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 2
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 3
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 4
+        </mat-grid-tile>
 
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 5
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 6
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 7
-      </mat-grid-tile>
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 5
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 6
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 7
+        </mat-grid-tile>
 
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 8
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 9
-      </mat-grid-tile>
-     
-      <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-        Product 10
-      </mat-grid-tile>
-    </mat-grid-list>   
-   
-  </mat-sidenav-container>
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 8
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 9
+        </mat-grid-tile>
+       
+        <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+          Product 10
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
 
-  <app-footer fxFlexOffset="auto"></app-footer>
+  </div>
+  
+  <!--Footer-->
+  <div class="footer-row" fxLayout="row">
+    <app-footer fxFlexOffset="auto"></app-footer>
+  </div>
 
 </div>
-
 
 <router-outlet></router-outlet>

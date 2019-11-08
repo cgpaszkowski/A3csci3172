@@ -12,6 +12,7 @@ import { AppContentComponent } from './components/app-content/app-content.compon
 import { AppProductComponent } from './components/app-product/app-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
+import { FlatTreeControl } from '@angular/cdk/tree';
 
 import {
   MatButtonModule,
@@ -28,7 +29,8 @@ import {
   MatSidenavModule,
   MatSlideToggleModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTreeModule
 } from '@angular/material';
 
 @NgModule({
@@ -62,7 +64,8 @@ import {
     MatSidenavModule,
     MatSlideToggleModule,
     MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

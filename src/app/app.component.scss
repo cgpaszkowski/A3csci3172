@@ -1,3 +1,10 @@
+.main-cont {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 :host {
   display: flex;
   flex: 1;
@@ -6,7 +13,6 @@
 .nav-upper-links {
   min-height:24px;
   max-height:24px;
-  align-content: flex-end;
 }
 
 .nav-upper-links a {
@@ -23,6 +29,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.test {
+  flex: 1 1 auto;
+}
+
 .nav-links a {
   color: white;
   padding-right: 1em;
@@ -34,7 +44,7 @@ a:hover {
 }
 
 mat-sidenav {
-  width: 320px;
+  width: 250px;
 }
 
 mat-panel-expansion {
@@ -45,7 +55,11 @@ mat-panel-expansion {
   height: auto !important;
 }
 
-
 mat-grid-tile {
   background: lightblue;
 }
+
+app-footer {
+  height: 200px;
+}
+
